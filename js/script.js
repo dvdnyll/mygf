@@ -60,7 +60,11 @@ function selesai() {
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
-    <input type="button" onclick="location.href='https://t.me/+hDNesoQ0UpU3ODU1';" value="Go to Telegram" />
+    title: 'Hai Sayang',
+    html: `<input type="button" onclick="location.href='https://google.com';" value="Go to Google" />`,
+    timer: 2500,
+    timerProgressBar: true,
+    showConfirmButton: false,
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       Swal.fire('Kalau belum jangan lupa makan yaa').then((result) => {
