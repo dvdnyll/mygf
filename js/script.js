@@ -61,7 +61,7 @@ function selesai() {
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
     title: 'Hai Sayang',
-    html: `<input type="button" onclick="location.href='https://google.com';" value="Go to Google" />`,
+    html: `Selamat ${time()}, ${makan()}`,
     timer: 2500,
     timerProgressBar: true,
     showConfirmButton: false,
