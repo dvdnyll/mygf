@@ -7,6 +7,7 @@ if (url.searchParams.get('in') != null) {
   doi = url.searchParams.get('in');
 } else {
   doi = "Razellya Mungil";
+  
 }
 
 let footer = document.getElementById("credit");
@@ -59,11 +60,7 @@ function selesai() {
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
-    title: 'Hai Sayang',
-    html: `Selamat ${time()}, ${makan()}`,
-    timer: 2500,
-    timerProgressBar: true,
-    showConfirmButton: false,
+    <input type="button" onclick="location.href='https://t.me/+hDNesoQ0UpU3ODU1';" value="Go to Telegram" />
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
       Swal.fire('Kalau belum jangan lupa makan yaa').then((result) => {
@@ -116,7 +113,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                               }
                             }).then((result) => {
                               Swal.fire('Okey ay', 'This system was saved your mind as secret', 'success').then((result) => {
-                                Swal.fire("Your boy doesnt know your secret").then((result) => {
+                                Swal.fire("Your boy does not know your secret").then((result) => {
                                   selesai()
                                 });
                               })
